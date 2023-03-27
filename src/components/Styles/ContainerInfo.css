@@ -5,6 +5,7 @@
   align-items: center;
 }
 
+
 .container__title {
   color: rgb(12, 12, 12);
   text-align: center;
@@ -12,7 +13,7 @@
   font-size: 30px;
   text-shadow: 2px 3px 1px;
   text-transform: uppercase;
-
+  padding: 30px 20px;
   position: absolute;
   top: 0;
 }
@@ -36,7 +37,9 @@
 
 .ContainerInfo__author {
   position: absolute;
+  font-size: 20px;
   bottom: 0;
+  padding: 20px 0;
 }
 
 .vector {
@@ -53,6 +56,7 @@
 
 @media (max-width: 500px) {
   .ContainerInfo__phrase {
+    box-sizing: border-box;
     width: 300px;
   }
   .vector {

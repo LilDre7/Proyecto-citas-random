@@ -1,9 +1,26 @@
 .container_button {
-  font-family: 'Dokdo', cursive;;
+  font-family: "Dokdo", cursive;
   background: rgba(255, 255, 255, 0.6);
   border: 2px solid #ffffff;
   border-radius: 10px;
   padding: 10px;
   margin-top: 20px;
   font-size: 23px;
+}
+
+.container_button:hover {
+  color: #fff;
+  border: #333333;
+  background: #333333; 
+  background: -webkit-linear-gradient(
+    to right,
+    #dd1818,
+    #333333
+  );
+  background: linear-gradient(
+    to right,
+    #dd1818,
+    #333333
+  );
+  transition: 1.4s all;
 }
