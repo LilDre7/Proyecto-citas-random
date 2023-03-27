@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Dokdo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dokdo&family=Nabla&display=swap');
+
+:root {
+  --letra-principal: 'Nabla', cursive;
+  --letra-secundaria: 'Dokdo', cursive;
+}
+
+body {
+  margin: 0;
+  background-color: rgba(28, 27, 27, 0.72);
+  color: rgb(210, 207, 207);
+}
+
+html {
+  box-sizing: border-box;
+  font-family: var(--letra-principal)
+}
+
+*, *::after, *::before {
+  box-sizing: inherit;
+}
+
+
+h1, h2, h3, h4 , h5, h6 {
+  margin: 0;
+  
+}
+
+p {
+  font-family: var(--letra-secundaria);
+}
+
+
+
+

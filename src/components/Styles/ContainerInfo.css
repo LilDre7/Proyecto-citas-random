@@ -1,0 +1,67 @@
+.container__section {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container__title {
+  color: rgb(12, 12, 12);
+  text-align: center;
+  font-weight: bold;
+  font-size: 30px;
+  text-shadow: 2px 3px 1px;
+  text-transform: uppercase;
+
+  position: absolute;
+  top: 0;
+}
+
+.ContainerInfo__phrase {
+  color: rgb(0, 0, 0);
+  background-image: url(/src/assets/images/rectangulo.png);
+  padding: 10px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  aspect-ratio: 2;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+
+  max-width: 500px;
+  /* overflow: auto; */
+}
+
+.ContainerInfo__author {
+  position: absolute;
+  bottom: 0;
+}
+
+.vector {
+  background-image: url(/src/assets/images/Vector.png);
+  position: absolute;
+  left: 62.21%;
+  right: 12.5%;
+  top: 48.92%;
+  bottom: 20.1%;
+
+  background-size: 40px;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 500px) {
+  .ContainerInfo__phrase {
+    width: 300px;
+  }
+  .vector {
+    visibility: hidden;
+  }
+}
+
+@media (min-width: 500px) {
+  .ContainerInfo__phrase {
+    width: 500px;
+  }
+}
