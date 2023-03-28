@@ -1,26 +1,40 @@
 .container_button {
   font-family: "Dokdo", cursive;
-  background: rgba(255, 255, 255, 0.6);
-  border: 2px solid #ffffff;
-  border-radius: 10px;
-  padding: 10px;
+  width: 190px;
+  height: 90px;
+  border-style: solid;
+  font-size: 20px;
+  font-weight: bold;
+  border-style: solid;
+  border-width: 5px;
   margin-top: 20px;
-  font-size: 23px;
+  animation: border-animation 5s linear infinite;
+  border-image: linear-gradient(to right, #ff00ff, #00ffff, #ffff00) 30;
+  box-shadow: 0px 1px 2px 0px rgba(38, 37, 39, 0.7),
+  1px 2px 4px 0px rgba(220, 225, 225, 0.7),
+  2px 4px 8px 0px rgba(179, 189, 189, 0.7),
+  2px 4px 16px 0px rgba(193, 197, 197, 0.7)
 }
 
+@keyframes border-animation {
+  0% {
+    border-image: linear-gradient(to right, #ff00ff, #00ffff, #ffff00) 30;
+  }
+  50% {
+    border-image: linear-gradient(to right, #00ffff, #ffff00, #ff00ff) 30;
+  }
+  100% {
+    border-image: linear-gradient(to right, #ffff00, #ff00ff, #00ffff) 30;
+  }
+}
+
+
 .container_button:hover {
-  color: #fff;
+  color: #000000;
   border: #333333;
-  background: #333333; 
-  background: -webkit-linear-gradient(
-    to right,
-    #dd1818,
-    #333333
-  );
-  background: linear-gradient(
-    to right,
-    #dd1818,
-    #333333
-  );
   transition: 1.4s all;
+  box-shadow: 0px 1px 2px 0px rgba(155, 57, 203, 0.7),
+  1px 2px 4px 0px rgba(0, 255, 255, 0.7),
+  2px 4px 8px 0px rgba(0, 255, 255, 0.7),
+  2px 4px 16px 0px rgba(0, 255, 255, 0.7);
 }
